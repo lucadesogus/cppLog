@@ -15,13 +15,14 @@ cppLog::LogD("Goodbye!");
 
 ### Tested Platforms  
   
-- Windows  
-- Unix (Linux,OSX)  
+- Windows 10
+- Ubuntu 16.04
+- macOS HighSierra 10.13.6  
   
 ### Tested Compilers  
 - MSVC 19.14.26428.1
 - GCC 5.4.0
-- CLang  
+- CLang 9.1.0.9020039
   
 ## How to use cppLog  
 Include "cpplog.hpp" into your project and use it as shown in "example/main.cpp".  
