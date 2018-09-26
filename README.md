@@ -19,8 +19,8 @@ cppLog::LogD("Goodbye!");
 - Unix (Linux,OSX)  
   
 ### Tested Compilers  
-- MSVC 19.14.x.x  
-- G++  
+- MSVC 19.14.26428.1
+- GCC 5.4.0
 - CLang  
   
 ## How to use cppLog  
