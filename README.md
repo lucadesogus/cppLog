@@ -28,7 +28,7 @@ cppLog::LogD("Goodbye!");
 Include "cpplog.hpp" into your project and use it as shown in "example/main.cpp".  
   
 ## Build and run the example  
-Cmake  >= 5.4
+Cmake  >= 3.5
 
 Unix:
 ```sh  
