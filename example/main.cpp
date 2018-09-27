@@ -54,6 +54,7 @@ int main()
     cppLog::LogI("cpplog example start.");
 
 #ifdef _LOG2FILE_
+    cppLog::printColors(false);
     std::ofstream ofs ("cpplog_example.log", std::ofstream::out);
     cppLog::setOutput(ofs);
 #endif
@@ -61,7 +62,7 @@ int main()
     long long llm = LLONG_MAX;
     cppLog::LogW(llm);
 
-    // exemple of decimal precision
+    // example of decimal precision
     Var<long double> vld(945.776767667678545);
     cppLog::LogD(CPPLOG_DECIMAL_PRECISION(15),vld,CPPLOG_DECIMAL_PRECISION(6),vld);
 
@@ -94,11 +95,14 @@ int main()
     }
     //join threads
     std::for_each (l_vectThreads.begin(),l_vectThreads.end(),[](std::thread & t){t.join();});
-
+#ifndef _LOG2FILE_
     cppLog::printColors(false);
+#endif
     // :)
     luca l,u,c,a;
+#ifndef _LOG2FILE_   
     cppLog::printColors(true);
+#endif
     cppLog::LogI("cpplog example end.");
 #ifdef _LOG2FILE_
     ofs.close();
