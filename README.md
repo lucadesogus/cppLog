@@ -8,7 +8,7 @@ cppLog::LogI("Hello", "World!");
 auto age = 29;  
 cppLog::LogW("I'm", age, "years old.");  
 auto b = true;  
-cppLog::LogW("Yes, this is", b);  
+cppLog::LogE("Yes, this is", b);  
 cppLog::LogD("Goodbye!");  
 ```  
 ![img_short_example](https://github.com/lucadesogus/cppLog/blob/DEV_WK1839/img/example_00.png)  
